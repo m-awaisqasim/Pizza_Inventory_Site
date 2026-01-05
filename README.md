@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+🍕 Toss in F11 - Pizza Inventory Manager
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sleek, real-time inventory management system built for small to medium-sized pizza restaurants, designed to keep track of essential ingredients and supplies. This application features an AI-assisted command interface and provides immediate low-stock alerts and advanced reporting capabilities.
 
-## Available Scripts
+✨ Key Features
 
-In the project directory, you can run:
+This application is built as a single-page React component using modern functional practices and styled with a clean, responsive interface using Tailwind CSS.
 
-### `npm start`
+🤖 AI Agent Command Center
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Input commands in natural language to quickly update your inventory.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Add Stock: bought 5 kg of onions
 
-### `npm test`
+Remove Stock: used 2 liters of sauce
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📦 Real-Time Stock Management
 
-### `npm run build`
+Immediate Updates: Increase or decrease stock levels instantly using dedicated plus/minus buttons.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+CRUD Operations: Easily add new items, edit existing details (name, unit, cost, threshold), and delete items.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+🚨 Low Stock Alert System
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Visual Warnings: Items below their set threshold are highlighted in red.
 
-### `npm run eject`
+System Notifications: Sends native browser notifications (with user permission) when an item falls into low stock, ensuring you never miss a critical restock time.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+🔍 Search, Filter, and Sort
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Powerful tools to manage large inventories:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Search: Filter items by name.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Filter: View only Low Stock, In Stock, or High Value items.
 
-## Learn More
+Sort: Sort the list by Name (A-Z/Z-A), Stock Level, or Total Inventory Value.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📈 Dashboard and Reporting
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Summary: View real-time metrics for total items, number of low stock items, and total inventory value (based on unit cost).
 
-### Code Splitting
+Export: Generate reports in two formats:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+CSV (Comma Separated Values): Optimized for direct opening in Microsoft Excel or Google Sheets for advanced data analysis.
 
-### Analyzing the Bundle Size
+PDF: Generate a clean, printable report of the current inventory list.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+🛠️ Usage Guide
 
-### Making a Progressive Web App
+1. Adding/Editing Items
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Click the "Add New Item" button.
 
-### Advanced Configuration
+Fill in the details: Name, Current Stock, Unit (e.g., kg, liters, units), Low Stock Threshold, and the Cost per Unit (Rs.).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Click "Add Item" or "Save Changes".
 
-### Deployment
+2. Updating Stock
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+There are two ways to update stock:
 
-### `npm run build` fails to minify
+Method
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Description
+
+Manual Adjustments
+
+Use the + or - buttons next to each item to increment or decrement the stock by 1 unit.
+
+AI Agent Command
+
+Use the "AI Agent Command Center" input box for batch updates or specific amounts (e.g., received 10 kg of pizza dough).
+
+3. Reporting
+
+The export buttons provide immediate downloads:
+
+Export to CSV: Downloads a file containing all columns (Item Name, Stock, Cost, Total Value, Status, etc.). This is the recommended format for data analysis.
+
+Export to PDF: Opens a print-friendly window that formats the current inventory list as a static, readable report.
+
+💻 Tech Stack
+
+Frontend: React (Functional Components and Hooks)
+
+Styling: Tailwind CSS (Utility-First Framework)
+
+Icons: Lucide React
+
+Data Handling: JavaScript (In-memory state management)
+
+Note on Export: The application initially attempted to use the SheetJS library for complex Excel (XLSX) file generation. Due to security restrictions (Content Security Policy) in the hosting environment, this was replaced with a pure JavaScript CSV generator, which ensures reliable and instant downloads compatible with all spreadsheet software.
