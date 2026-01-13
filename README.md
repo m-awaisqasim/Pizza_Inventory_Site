@@ -500,9 +500,9 @@ For questions or issues, please open an issue on the GitHub repository.
 ---
 
 **Version:** 1.0.0  
-**Last Updated:** January 2025  
-**Repository:** https://github.com/yourusername/pizza-inventory  
-**Live Demo:** https://your-app.vercel.app
+**Last Updated:** January 2026  
+**Repository:** [Pizza Inventory ](https://github.com/m-awaisqasim/Pizza_Inventory_Site/) 
+**Live Demo:** [Vercel.app](https://tossinventory.vercel.app/)
 
 ---
 
