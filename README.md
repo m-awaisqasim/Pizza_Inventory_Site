@@ -1,9 +1,15 @@
-Toss in F11 - Inventory Management System
-Overview
+# Toss in F11 - Inventory Management System
+
+## Overview
+
 Toss in F11 is a web-based inventory management application designed for pizza restaurants. The system provides real-time stock tracking, automated alerts for low inventory levels, and intelligent reporting capabilities. Built with modern web technologies, the application enables efficient inventory control while reducing manual tracking errors and administrative overhead.
 
-If you have qurey about it ASKED to: zread
-System Architecture
+If you have qurey about it ASKED to: [![zread](https://img.shields.io/badge/Ask_Zread-_.svg?style=flat&color=00b0aa&labelColor=000000&logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQuOTYxNTYgMS42MDAxSDIuMjQxNTZDMS44ODgxIDEuNjAwMSAxLjYwMTU2IDEuODg2NjQgMS42MDE1NiAyLjI0MDFWNC45NjAxQzEuNjAxNTYgNS4zMTM1NiAxLjg4ODEgNS42MDAxIDIuMjQxNTYgNS42MDAxSDQuOTYxNTZDNS4zMTUwMiA1LjYwMDEgNS42MDE1NiA1LjMxMzU2IDUuNjAxNTYgNC45NjAxVjIuMjQwMUM1LjYwMTU2IDEuODg2NjQgNS4zMTUwMiAxLjYwMDEgNC45NjE1NiAxLjYwMDFaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00Ljk2MTU2IDEwLjM5OTlIMi4yNDE1NkMxLjg4ODEgMTAuMzk5OSAxLjYwMTU2IDEwLjY4NjQgMS42MDE1NiAxMS4wMzk5VjEzLjc1OTlDMS42MDE1NiAxNC4xMTM0IDEuODg4MSAxNC4zOTk5IDIuMjQxNTYgMTQuMzk5OUg0Ljk2MTU2QzUuMzE1MDIgMTQuMzk5OSA1LjYwMTU2IDE0LjExMzQgNS42MDE1NiAxMy43NTk5VjExLjAzOTlDNS42MDE1NiAxMC42ODY0IDUuMzE1MDIgMTAuMzk5OSA0Ljk2MTU2IDEwLjM5OTlaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik0xMy43NTg0IDEuNjAwMUgxMS4wMzg0QzEwLjY4NSAxLjYwMDEgMTAuMzk4NCAxLjg4NjY0IDEwLjM5ODQgMi4yNDAxVjQuOTYwMUMxMC4zOTg0IDUuMzEzNTYgMTAuNjg1IDUuNjAwMSAxMS4wMzg0IDUuNjAwMUgxMy43NTg0QzE0LjExMTkgNS42MDAxIDE0LjM5ODQgNS4zMTM1NiAxNC4zOTg0IDQuOTYwMVYyLjI0MDFDMTQuMzk4NCAxLjg4NjY0IDE0LjExMTkgMS42MDAxIDEzLjc1ODQgMS42MDAxWiIgZmlsbD0iI2ZmZiIvPgo8cGF0aCBkPSJNNCAxMkwxMiA0TDQgMTJaIiBmaWxsPSIjZmZmIi8%2BCjxwYXRoIGQ9Ik00IDEyTDEyIDQiIHN0cm9rZT0iI2ZmZiIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPgo8L3N2Zz4K&logoColor=ffffff)](https://zread.ai/m-awaisqasim/Pizza_Inventory_Site)
+---
+
+## System Architecture
+
+```
 ┌─────────────────────────────────────────────────────────────┐
 │                         User Browser                         │
 │  ┌────────────┐  ┌─────────────┐  ┌──────────────────────┐ │
@@ -27,7 +33,13 @@ System Architecture
          ▼                           ▼
    React.js State              Local Storage
    (In-Memory)                 (Future)
-Application Workflow
+```
+
+---
+
+## Application Workflow
+
+```
 User Action
     │
     ▼
@@ -53,32 +65,46 @@ User Action
 │  UI Reflects Change │
 │  (Visual Update)    │
 └─────────────────────┘
-Key Features
-🎯 Inventory Management
+```
+
+---
+
+## Key Features
+
+### 🎯 Inventory Management
 Track stock levels, costs, and values in real time. Each item maintains current quantity, unit of measurement, cost per unit, and customizable low-stock thresholds.
 
-🔔 Intelligent Alerts
+### 🔔 Intelligent Alerts
 The system monitors inventory continuously and triggers visual alerts when items fall below designated thresholds. Browser notifications provide additional awareness.
 
-🤖 Natural Language Interface
+### 🤖 Natural Language Interface
 Process inventory updates using conversational commands such as "bought 5 kg of onions" or "used 2 liters of sauce."
 
-🔍 Search and Filter
+### 🔍 Search and Filter
 Real-time search filters inventory as you type. Multiple filter options display low-stock items, adequately stocked items, or high-value inventory.
 
-📊 Professional Reporting
+### 📊 Professional Reporting
 Export comprehensive reports to Excel with automatic summary calculations or generate print-ready PDF reports.
 
-Technology Stack
-Component	Technology	Purpose
-Frontend Framework	React.js 18	Component-based UI architecture
-Styling	Tailwind CSS	Responsive design and visual styling
-Icons	Lucide React	Consistent icon library
-Data Export	SheetJS (XLSX)	Excel spreadsheet generation
-Build Tools	Create React App	Development environment and optimization
-Version Control	Git	Code tracking and collaboration
-Hosting	Vercel	Cloud deployment and CDN delivery
-Deployment Architecture
+---
+
+## Technology Stack
+
+| Component | Technology | Purpose |
+|-----------|-----------|---------|
+| Frontend Framework | React.js 18 | Component-based UI architecture |
+| Styling | Tailwind CSS | Responsive design and visual styling |
+| Icons | Lucide React | Consistent icon library |
+| Data Export | SheetJS (XLSX) | Excel spreadsheet generation |
+| Build Tools | Create React App | Development environment and optimization |
+| Version Control | Git | Code tracking and collaboration |
+| Hosting | Vercel | Cloud deployment and CDN delivery |
+
+---
+
+## Deployment Architecture
+
+```
 Developer Workstation                 Cloud Infrastructure
 ┌──────────────────┐                 ┌──────────────────┐
 │                  │                 │                  │
@@ -109,28 +135,49 @@ Developer Workstation                 Cloud Infrastructure
                                             │
                                             ▼
                                       End Users
-Prerequisites
-Node.js 14.0.0 or higher
-NPM 6.0.0 or higher
-Git 2.0.0 or higher
-Modern web browser (Chrome, Firefox, Safari, Edge)
-Installation
-Local Development Setup
+```
+
+---
+
+## Prerequisites
+
+- **Node.js** 14.0.0 or higher
+- **NPM** 6.0.0 or higher
+- **Git** 2.0.0 or higher
+- **Modern web browser** (Chrome, Firefox, Safari, Edge)
+
+---
+
+## Installation
+
+### Local Development Setup
+
 Clone the repository and install dependencies:
 
+```bash
 git clone https://github.com/yourusername/pizza-inventory.git
 cd pizza-inventory
 npm install
 npm start
-The application launches at http://localhost:3000 with hot reloading enabled.
+```
 
-Production Build
+The application launches at `http://localhost:3000` with hot reloading enabled.
+
+### Production Build
+
 Create an optimized production build:
 
+```bash
 npm run build
-The build files will be generated in the build directory.
+```
 
-Component Hierarchy
+The build files will be generated in the `build` directory.
+
+---
+
+## Component Hierarchy
+
+```
 App (Main Container)
 │
 ├── Dashboard
@@ -163,7 +210,13 @@ App (Main Container)
 └── ItemForm (Modal)
     ├── Form Fields
     └── Save/Cancel Actions
-Data Flow Diagram
+```
+
+---
+
+## Data Flow Diagram
+
+```
 ┌─────────────────────────────────────────────────────────┐
 │                    Browser Storage                       │
 │                    (Session Only)                        │
@@ -194,55 +247,78 @@ Data Flow Diagram
 │  │  (Visible User Interface)                         │   │
 │  └───────────────────────────────────────────────────┘   │
 └─────────────────────────────────────────────────────────┘
-Usage Guide
-Managing Inventory Items
-Adding Items: Click "Add New Item" button, fill in the form with item name, stock quantity, unit, threshold, and cost per unit.
+```
 
-Editing Items: Click the "Edit" button on any item to modify its details.
+---
 
-Adjusting Stock: Use the plus (+) and minus (-) buttons for quick stock adjustments.
+## Usage Guide
 
-Deleting Items: Click the "Delete" button and confirm the action.
+### Managing Inventory Items
 
-Using AI Commands
+**Adding Items**: Click "Add New Item" button, fill in the form with item name, stock quantity, unit, threshold, and cost per unit.
+
+**Editing Items**: Click the "Edit" button on any item to modify its details.
+
+**Adjusting Stock**: Use the plus (+) and minus (-) buttons for quick stock adjustments.
+
+**Deleting Items**: Click the "Delete" button and confirm the action.
+
+### Using AI Commands
+
 Type natural language commands in the AI Agent Command Center:
+- "bought 10 kg of cheese"
+- "used 3 liters of sauce"
+- "received 20 units of dough"
 
-"bought 10 kg of cheese"
-"used 3 liters of sauce"
-"received 20 units of dough"
-Search and Filter
-Search: Type in the search bar to filter items by name.
+### Search and Filter
 
-Filter Options:
+**Search**: Type in the search bar to filter items by name.
 
-All Items
-Low Stock Only
-In Stock
-High Value (Rs. 50+, Rs. 100+, Rs. 200+)
-Sort Options:
+**Filter Options**:
+- All Items
+- Low Stock Only
+- In Stock
+- High Value (Rs. 50+, Rs. 100+, Rs. 200+)
 
-Name (A-Z or Z-A)
-Stock (Low to High or High to Low)
-Value (Low to High or High to Low)
-Exporting Data
-Excel Export: Click "Export to Excel" to download a spreadsheet with all inventory data and summary statistics.
+**Sort Options**:
+- Name (A-Z or Z-A)
+- Stock (Low to High or High to Low)
+- Value (Low to High or High to Low)
 
-PDF Export: Click "Export to PDF" to open a print dialog with a formatted report.
+### Exporting Data
 
-Deployment to Vercel
-Step 1: Push to GitHub
+**Excel Export**: Click "Export to Excel" to download a spreadsheet with all inventory data and summary statistics.
+
+**PDF Export**: Click "Export to PDF" to open a print dialog with a formatted report.
+
+---
+
+## Deployment to Vercel
+
+### Step 1: Push to GitHub
+
+```bash
 git add .
 git commit -m "Initial commit"
 git push origin main
-Step 2: Connect to Vercel
-Sign up at vercel.com
-Click "Add New Project"
-Import your GitHub repository
-Click "Deploy"
-Step 3: Continuous Deployment
+```
+
+### Step 2: Connect to Vercel
+
+1. Sign up at [vercel.com](https://vercel.com)
+2. Click "Add New Project"
+3. Import your GitHub repository
+4. Click "Deploy"
+
+### Step 3: Continuous Deployment
+
 Every push to the main branch automatically triggers a new deployment. Changes go live within 2-3 minutes.
 
-Project Structure
+---
+
+## Project Structure
+
+```
 pizza-inventory/
 ├── public/
 │   ├── index.html           # Main HTML file with Tailwind CDN
@@ -258,7 +334,13 @@ pizza-inventory/
 ├── package.json            # Project configuration
 ├── .gitignore             # Git ignore rules
 └── README.md              # Documentation
-Development Workflow
+```
+
+---
+
+## Development Workflow
+
+```
 ┌──────────────┐
 │ 1. Code      │ → Write code in VS Code
 └──────┬───────┘
@@ -282,93 +364,152 @@ Development Workflow
 ┌──────▼───────┐
 │ 6. Live      │ → Changes visible at your-app.vercel.app
 └──────────────┘
-Browser Compatibility
-Browser	Minimum Version
-Chrome	90+
-Firefox	88+
-Safari	14+
-Edge	90+
+```
+
+---
+
+## Browser Compatibility
+
+| Browser | Minimum Version |
+|---------|----------------|
+| Chrome | 90+ |
+| Firefox | 88+ |
+| Safari | 14+ |
+| Edge | 90+ |
+
 Mobile browsers (Chrome for Android, Safari for iOS) are fully supported.
 
-Configuration
-Customizing Initial Data
-Edit src/App.js and modify the INITIAL_INVENTORY constant:
+---
 
+## Configuration
+
+### Customizing Initial Data
+
+Edit `src/App.js` and modify the `INITIAL_INVENTORY` constant:
+
+```javascript
 const INITIAL_INVENTORY = [
   { id: '1', name: "Item Name", stock: 50, unit: "units", threshold: 10, cost: 0.80 },
   // Add more items...
 ];
-Changing App Name and Icon
-Update Title: Edit public/index.html line 27:
+```
 
+### Changing App Name and Icon
+
+**Update Title**: Edit `public/index.html` line 27:
+```html
 <title>Your App Name</title>
-Update Icon: Replace files in public/ folder:
+```
 
-favicon.ico
-logo192.png
-logo512.png
-Update Manifest: Edit public/manifest.json:
+**Update Icon**: Replace files in `public/` folder:
+- `favicon.ico`
+- `logo192.png`
+- `logo512.png`
 
+**Update Manifest**: Edit `public/manifest.json`:
+```json
 {
   "short_name": "Your App",
   "name": "Your App Full Name"
 }
-Troubleshooting
-Application Won't Start
+```
+
+---
+
+## Troubleshooting
+
+### Application Won't Start
+
+```bash
 # Delete node_modules and reinstall
 rm -rf node_modules
 npm install
 npm start
-Styles Not Loading
-Verify Tailwind CDN link exists in public/index.html:
+```
 
+### Styles Not Loading
+
+Verify Tailwind CDN link exists in `public/index.html`:
+```html
 <script src="https://cdn.tailwindcss.com"></script>
-Notifications Not Working
+```
+
+### Notifications Not Working
+
 Check browser notification permissions in settings and grant access.
 
-Export Not Working
+### Export Not Working
+
 Disable popup blockers for localhost during development or your production domain.
 
-Performance Notes
-Handles up to 1000 inventory items efficiently
-Search and filter execute instantly (client-side processing)
-Export operations complete within seconds
-Memory usage remains minimal during extended sessions
-Security Considerations
+---
+
+## Performance Notes
+
+- Handles up to 1000 inventory items efficiently
+- Search and filter execute instantly (client-side processing)
+- Export operations complete within seconds
+- Memory usage remains minimal during extended sessions
+
+---
+
+## Security Considerations
+
 The application runs entirely client-side with no backend server. All data exists only in browser memory and disappears on page reload.
 
 For production deployment requiring data persistence, consider integrating:
+- Firebase Firestore for database
+- Firebase Authentication for user management
+- Proper API security with authentication tokens
 
-Firebase Firestore for database
-Firebase Authentication for user management
-Proper API security with authentication tokens
-Future Enhancements
-Database Integration: Firebase or PostgreSQL for data persistence
-User Authentication: Multi-user support with role-based access
-Purchase Orders: Automated reorder suggestions based on low stock
-Analytics Dashboard: Consumption trends and predictive inventory
-Mobile App: React Native version with offline support
-Barcode Scanning: Camera-based inventory updates
-Multi-location Support: Manage inventory across multiple sites
-Contributing
+---
+
+## Future Enhancements
+
+- **Database Integration**: Firebase or PostgreSQL for data persistence
+- **User Authentication**: Multi-user support with role-based access
+- **Purchase Orders**: Automated reorder suggestions based on low stock
+- **Analytics Dashboard**: Consumption trends and predictive inventory
+- **Mobile App**: React Native version with offline support
+- **Barcode Scanning**: Camera-based inventory updates
+- **Multi-location Support**: Manage inventory across multiple sites
+
+---
+
+## Contributing
+
 Contributions are welcome! Please follow these steps:
 
-Fork the repository
-Create a feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## License
+
 This project is open source and available for educational and commercial use. Modify and distribute freely while retaining attribution to the original authors.
 
-Support
+---
+
+## Support
+
 For questions or issues, please open an issue on the GitHub repository.
 
-Version: 1.0.0
-Last Updated: January 2026
-Repository: Pizza Inventory Live Demo: Vercel.app
+---
 
-Quick Reference Commands
+**Version:** 1.0.0  
+**Last Updated:** January 2026  
+**Repository:** [Pizza Inventory ](https://github.com/m-awaisqasim/Pizza_Inventory_Site/) 
+**Live Demo:** [Vercel.app](https://tossinventory.vercel.app/)
+
+---
+
+## Quick Reference Commands
+
+```bash
 # Install dependencies
 npm install
 
@@ -386,5 +527,9 @@ git push origin main
 # Clear cache and restart
 rm -rf node_modules/.cache
 npm start
-Made with ❤️ for pizza restaurant managers worldwide 🍕
+```
 
+---
+
+Made with ❤️ for pizza restaurant managers worldwide 🍕
+```
